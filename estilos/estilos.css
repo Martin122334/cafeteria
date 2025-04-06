@@ -1,7 +1,35 @@
+
 /*Aqui va a ir los estilos css para el index.html*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: yellow;
+    
 }
+/*Voy a darle estilos al body*/
+body {
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;    
+}
+/*Voy a darle estilos al header*/
+header {
+    background-color: rgb(211, 128, 28);
+    text-align: right;
+}
+
+header h1{
+    color: rgb(49, 151, 92);
+}
+.menu{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline;
+ color: rgb(27, 95, 55);   
+} 
+*/
