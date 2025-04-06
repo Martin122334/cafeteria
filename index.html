@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria Iñaquito</title>
+    <title>Cafeteria Esmeraldeña</title>
     <style>
         body {
             background-color: #cceeef; 
         }
-        div{
+        .cabecera-derecha{
             width: 80%;
             background-color: antiquewhite;
         }
@@ -18,6 +18,15 @@
         .menu{
             color: turquoise;
         }
+
+        #btn-acerca-de {
+            background-color: black;
+            /*el padding me da márgenes internos en cada elemento */
+            padding: 10px 30px 20px 50px;
+            /*el margin me da márgenes externos en cada elemento */
+            margin: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +35,7 @@
         <!--Menú de navegación-->
         <div>
             <nav>
-                <a class="menu" href="#" id="btn-acerca-de">Acerca de</a>
+                <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a href="#" id="btn-menu">Menú</a>
                 <a href="#" id="btn-galeria">Galeria</a>
                 <a class="menu" href="#" id="btn-ubicación">Ubicación</a>
