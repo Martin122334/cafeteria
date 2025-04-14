@@ -1,52 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Cafeteria Esmeraldeña</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Cafeteria esmeraldeña</title>
+
 </head>
+
 <body>
+    
     <!--Inicio del header-->
     <header>
         <!--Menú de navegación-->
-        <div>
-            <h1>Cafeteria</h1>
-            <nav>
+        <div class="contenedor">
+
+            <nav class="menu">
                 <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a href="#" id="btn-menu">Menú</a>
-                <a href="#" id="btn-galeria">Galeria</a>
-                <a class="menu" href="#" id="btn-ubicación">Ubicación</a>
-                  
-              </nav>
-        <div>
-            <h1>Cafetería Esmeraldeña <span></span></h1>
-            <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
-        </div>
+                <a href="#" id="btn-galeria">Galería</a>
+                <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
 
-        </div>
-    </header> <!--Fin del header-->
-    <!--Inicio de la sección main-->
-    <section>
-        <!--Inicio Acerca de-->
-        <section id="acerca-de">
-         <div>
-            <div>
-                <img src="img/acerca-de.jpg" alt="Acerca de lobby">
+            </nav>
+            <div class="texto">
+                <h1 class="nombre">Cafetería <span>esmeraldeña</span></h1>
+                <h3>Un refugio del tiempo, donde el corazón se abriga entre café y recuerdos</h3>
             </div>
-            <article>
-                <!--Aqui va una reseña de la p-->
-                <h3>Acerca de</h3>
-                <p>Fundada en 1958 por una familia esmeraldeña recién llegada a Quito, esta cafetería se ha convertido en un ícono de la gastronomía costeña en la capital. Nacida del deseo de compartir los sabores auténticos del litoral con los quiteños, el local comenzó como un pequeño puesto de café y empanadas en una esquina del norte de Quito. Gracias a su sazón inconfundible, su ambiente cálido y el espíritu emprendedor de sus fundadores, pronto se convirtió en un punto de encuentro obligado para quienes buscaban un pedacito de Esmeraldas en la ciudad.
+        </div>
+    </header><!--Fin del header-->
+    <!--Inicio del la sección main-->
+    <section class="main">
+        <!--Inicio Acerca de-->
+        <section class="acerca-de" id="acerca-de">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/WhatsApp Image 2025-04-03 at 20.49.29 (1).jpeg" alt="Acerca de lobby">
+                </div>
+                <article>
+                    <h3>Acerca de</h3>
+                    <p>
+                        Fundada en 1958 por una familia esmeraldeña recién llegada a Quito, esta cafetería se ha convertido en un ícono de la gastronomía costeña en la capital. Nacida del deseo de compartir los sabores auténticos del litoral con los quiteños, el local comenzó como un pequeño puesto de café y empanadas en una esquina del norte de Quito. Gracias a su sazón inconfundible, su ambiente cálido y el espíritu emprendedor de sus fundadores, pronto se convirtió en un punto de encuentro obligado para quienes buscaban un pedacito de Esmeraldas en la ciudad.
                     Con el paso de las décadas, la cafetería ha mantenido su esencia familiar, conservando recetas tradicionales que se han transmitido de generación en generación. Platos como el bolón de verde, las empanadas de camarón, el encocado y, por supuesto, su café pasado al estilo costeño, siguen siendo los favoritos de una clientela fiel que abarca varias generaciones.
-                    Hoy, más de 65 años después, este rincón esmeraldeño no solo representa un legado culinario, sino también una historia viva de migración, trabajo duro y amor por la cultura afroecuatoriana. </p>
-                <p>Entre sus especialidades más queridas se encuentran el bolón de verde, servido caliente con queso o chicharrón; el tradicional encebollado con su toque esmeraldeño, ideal para empezar el día con energía o para aliviar la resaca del fin de semana; el tigrillo, cremoso y perfectamente sazonado; y, por supuesto, el ceviche, fresco y con ese sabor único que solo se encuentra en la costa.
+                    Hoy, más de 65 años después, este rincón esmeraldeño no solo representa un legado culinario, sino también una historia viva de migración, trabajo duro y amor por la cultura afroecuatoriana.
+                    </p>
+                    <p>
+                        Entre sus especialidades más queridas se encuentran el bolón de verde, servido caliente con queso o chicharrón; el tradicional encebollado con su toque esmeraldeño, ideal para empezar el día con energía o para aliviar la resaca del fin de semana; el tigrillo, cremoso y perfectamente sazonado; y, por supuesto, el ceviche, fresco y con ese sabor único que solo se encuentra en la costa.
                     Con cada plato, la cafetería honra sus raíces afroesmeraldeñas, transmitiendo la calidez de su gente y la riqueza de su herencia. Hoy en día, sigue siendo atendida con el mismo cariño de siempre, conservando recetas familiares que han pasado de generación en generación. Más que una cafetería, es un lugar lleno de memoria, donde cada desayuno o almuerzo es una experiencia que evoca el mar, el sol y la alegría del litoral.
-                    Ubicada en el corazón del norte de Quito, esta joya gastronómica continúa firme en su misión: ser un pedacito de Esmeraldas en la capital, donde el sabor es tan auténtico como su historia.</p>
-            </article>
-         </div>
-        </section>
-    </section>
+                    Ubicada en el corazón del norte de Quito, esta joya gastronómica continúa firme en su misión: ser un pedacito de Esmeraldas en la capital, donde el sabor es tan auténtico como su historia.
+
+                    </p>
+                </article>
+            </div>
+        </section><!--Fin Acerca de-->
+        <!--Inicio de la sección menú-->
+        <section class="menu">
+            <div class="contenedor">
+                <h3 class="titulo" id="platillos">Menú</h3>
+                <!--poner otro div -->
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="categoria">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Ceviche de camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El ceviche viene con patacones y chifle</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Bolon mixto</p>
+                            <p class="precio">$5.50</p>
+                            <p class="descripcion">El bolón viene con salsas y patacones</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Seco de gallina</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El seco viene con ensalada y jugo</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Guatita</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">La guatita viene con patacones y un batido</p>
+
+                        </div>
+
+                    </article><!--Fin de la sección de comida-->
+                    <!--Inicio de sección bebidas-->
+                    <article>
+                        <p class="categoria">Bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Té de manzanilla</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">manzanilla natural</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Café con leche</p>
+                            <p class="precio">$2.00</p>
+                            <p class="descripcion">Café con leche</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Jugo de Mora</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Mora 100% natural</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Granizado</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Maracuya, Mora y Mango</p>
+                        </div>
+                    </article><!--Fin de la sección de bebidas-->
+                </div>
+            </div>
+        </section><!--Fin de la sección menú-->
+        <!--Inicio de la sección galería-->
+        <section class="galeria" id="galeria">
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.28 (1).jpeg" alt="cafe">
+
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.29 (1).jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.30 (1).jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.31 (1).jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.30 (2).jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.30.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.31.jpeg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/WhatsApp Image 2025-04-03 at 20.49.28.jpeg" alt="cafe">
+            </div>
+
+        </section><!--Fin galeria-->
+
+        <!--Inicio de ubicación-->
+        <section class="ubicacion" id="ubicacion">
+            <div class="contenedor">
+                <h3 class="titulo">Ubicación</h3>
+                <div class="direccion">
+                    <p class="calle">E5 <br> S48-520</p><br>
+                    <p class="telefono">(+593) 0992628980</p>
+                    <p class="correo">cafeteria@ejemplo.com</p>
+                </div>
+
+                <div class="horarios">
+                    <h4>Horarios</h4>
+                    <p class="entre-semana">Lunes a Viernes <br>7:00-21:00</p>
+                    <p class="fin-semana">Sabados y domingos <br>11:00-23:00</p>
+                </div>
+            </div>
+        </section> <!-- fin ubicacion-->
+        <!--Inicio mapa-->
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1146.0164068981207!2d-78.49803724041764!3d-0.19354257108565237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a6a396e7a79%3A0xb00ae5ab53467167!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Quito%20-%20ITQ!5e1!3m2!1ses!2sec!4v1744424038862!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+        </section><!--Fin mapa-->
+    </section><!--Fin de la sección main-->
+    <!--footer  -->
+    <footer>
+        <div class="contenedor">
+            <div class="copyright">
+                <p>	&COPY; Todos los derechos reservados davitorn 2015-2025</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

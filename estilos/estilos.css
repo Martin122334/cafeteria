@@ -1,35 +1,347 @@
 
-/*Aqui va a ir los estilos css para el index.html*/
+/* --- Reset básico --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
-/*Voy a darle estilos al body*/
+
 body {
-    background-color: #f0f0f0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;    
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111;
 }
-/*Voy a darle estilos al header*/
+
+/* --- Contenedor general --- */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- Header --- */
 header {
-    background-color: rgb(211, 128, 28);
+    width: 100%;
+    background: url(../img/WhatsApp\ Image\ 2025-04-03\ at\ 20.49.31\ \(2\).jpeg) #c29b74 no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+header .menu {
+    width: 100%;
     text-align: right;
 }
 
-header h1{
-    color: rgb(49, 151, 92);
-}
-.menu{
-    text-align: center;
-}
-a{
+header .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 40px 20px;
     text-decoration: none;
+    position: relative;
 }
 
-a:hover{
- text-decoration: underline;
- color: rgb(27, 95, 55);   
-} 
-*/
+header .menu a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+header .texto {
+    width: 100%;
+    color: azure;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .texto .nombre {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .texto .nombre_cafeteria {
+    font-weight: 300;
+}
+
+header .texto h3 {
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+/* --- Main --- */
+.main {
+    background: url(../img/WhatsApp\ Image\ 2025-04-03\ at\ 20.49.32.jpeg) repeat;
+}
+
+/* Acerca de */
+.main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .acerca-de .foto img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .acerca-de article {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .acerca-de article h3 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .acerca-de article p {
+    margin-bottom: 15px;
+}
+
+/* Menú */
+.main .menu {
+    padding-top: 630px;
+    margin-bottom: 50px;
+}
+
+.main .menu .titulo {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+    border: 2px solid #000;
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.main .menu article {
+    width: 50%;
+    background-color: aquamarine;
+    float: left;
+}
+
+.main .menu .categoria {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main .menu .platillos {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted #000;
+    overflow: hidden;
+}
+
+.main .menu .nombre {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.main .menu .precio {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .menu .descripcion {
+    font-size: 16px;
+    color: #676767;
+    clear: both;
+}
+
+/* Galería */
+.main .galeria {
+    overflow: hidden;
+}
+
+.main .galeria .foto {
+    width: 25%;
+    float: right;
+}
+
+.main .galeria .foto img {
+    width: 100%;
+    vertical-align: top;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.main .galeria .foto img:hover {
+    opacity: 1;
+}
+
+/* Ubicación */
+.main .ubicacion {
+    background: #fff;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.main .ubicacion .titulo {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.main .ubicacion .direccion,
+.main .ubicacion .horarios {
+    width: 50%;
+    float: left;
+}
+
+.main .ubicacion .horarios {
+    text-align: right;
+}
+
+.main .ubicacion .direccion .calle {
+    margin-bottom: 15px;
+}
+
+.main .ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .ubicacion .entre-semana,
+.main .ubicacion .fin-semana {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+/* Mapa */
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+}
+
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 800px) {
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+
+    header .texto {
+        position: static;
+        margin: 100px 0;
+        text-align: center;
+    }
+
+    header .menu {
+        text-align: center;
+    }
+
+    header .menu a {
+        margin: 10px 20px;
+    }
+
+    header .texto .nombre {
+        font-size: 30px;
+    }
+
+    header .texto h3 {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .acerca-de article {
+        width: 100%;
+        top: -50px;
+    }
+
+    .main .menu {
+        padding-top: 300px;
+    }
+
+    .main .menu article {
+        width: 100%;
+    }
+
+    .main .galeria .foto {
+        width: 50%;
+    }
+
+    .main .mapa {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main .acerca-de article h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .main .menu .nombre,
+    .main .menu .precio {
+        font-size: 16px;
+    }
+
+    .main .galeria .foto {
+        width: 100%;
+    }
+}
